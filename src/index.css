@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Interactivity support transitions */
+body {
+  font-family: var(--font-sans);
+  background-color: #0e131f; /* Technical Dashboard primary background */
+  color: #cbd5e1; /* slate-300 - significantly brighter and more readable */
+  overflow-x: hidden;
+}
+
+/* Smooth code selection colors */
+textarea::selection {
+  background-color: rgba(99, 102, 241, 0.25) !important;
+  color: #e2e8f0 !important;
+}
+
+/* Custom CSS theme overrides to brighten the layout and remove gloomy pitch-black colors */
+.bg-\[\#0B0E14\], [class*="bg-[#0B0E14]"], .bg-[#0B0E14] {
+  background-color: #141c2d !important;
+}
+
+.bg-\[\#0D1017\], [class*="bg-[#0D1017]"], .bg-[#0D1017] {
+  background-color: #1a243a !important;
+}
+
+.bg-\[\#0F1219\], [class*="bg-[#0F1219]"], .bg-[#0F1219] {
+  background-color: #212c47 !important;
+}
+
+.hover\:bg-\[\#0B0E14\]\/70:hover, .hover\:bg-\[\#0B0E14\]\/75:hover, tr.group:hover {
+  background-color: #222e4c !important;
+}
+
+.border-slate-800, .border-slate-805, [class*="border-slate-800"], [class*="border-slate-805"] {
+  border-color: #293859 !important;
+}
+
+/* Brighter secondary text colors for premium readability */
+.text-slate-500, [class*="text-slate-500"] {
+  color: #8fa0ba !important;
+}
+
+.text-slate-600, [class*="text-slate-600"] {
+  color: #a4b4cb !important;
+}
+
+.text-slate-400, [class*="text-slate-400"] {
+  color: #cbd5e1 !important;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 14s linear infinite;
+}

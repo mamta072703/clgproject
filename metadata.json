@@ -1,0 +1,6 @@
+{
+  "name": "CodeQuest",
+  "description": "An enterprise-grade AI-powered personalized coding learning platform with smart recommendations, custom code feedback, gamification systems, and dynamic challenge logs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
